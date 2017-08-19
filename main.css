@@ -1,0 +1,37 @@
+body{
+    font-family: 'Titillium Web';
+    color: #808080;
+}
+
+.header {
+
+    background-color: #61ffbb;
+    color: #808080;
+    border-color: #56e8ad;
+
+
+}
+.header a{
+    font-family: 'Titillium Web';
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background: #56e8ad;
+}
+
+.active{
+    background-color: #56e8ad;
+}
+.b-area{
+    height: 400px;
+}
+.b1{
+    height: 40px;
+    padding: 10px;
+
+}
+#newIC{
+    position: relative;
+    float: right;
+}
