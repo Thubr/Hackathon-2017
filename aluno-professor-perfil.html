@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>ICMatch</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Titillium+Web" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="main.css" >
+  </head>
+  <body>
+      <nav class="navbar navbar-default header">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" style="font-family: 'Baloo Bhaijaan'; font-size: xx-large " href="home.html">ICMatch</a>
+              </div>
+              <ul class="nav navbar-nav">
+        
+                <li class="active"><a href="aluno-propostas.html">Propostas de IC </a>
+        
+                </li>
+        
+                <li><a href="aluno-buscar-prof.html">Buscar Professor</a></li>
+        
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="aluno-perfil.html"><span class="glyphicon glyphicon-user"></span> Aluno</a></li>
+        
+              </ul>
+            </div>
+          </nav>
+
+    <div class="container">
+        <br><br><br><br>
+        
+        
+          <!-- Modal -->
+          <h2>Professor: Bruno Albuquerque</h2>
+          <h4>Contato: brualbq@example.com</h4>
+          <h4>CV: bit.ly/A23c45</h4>
+          <h4>CV Lattes: http://buscacv.cnpq.br/buscacv/#/espelho?nro_id_cnpq_cp_s=23493245</h4>
+        <h2 type="button" data-toggle="collapse" data-target="#demo"> Minhas ICs:</h2>
+        <br>
+        <div id="meIC" class="collapse in">    
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Tags</th>
+              <th>Descrição</th>
+              <th>Título</th>
+              <th>Interessados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><h5>
+                <label class="tag">Engenharia de Produção</label>
+                <label class="tag">Química Molecular</label>
+              </h5></td>
+              <td style="width:640px;"  contenteditable="true" class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis quis diam non volutpat. Aliquam bibendum facilisis nunc, at egestas arcu vehicula vitae. Aenean consectetur pulvinar ex non ultricies. Aenean varius, purus vitae rutrum vehicula, turpis neque maximus urna, et tincidunt est ex quis felis. Pellentesque varius rutrum nunc, a ultrices diam pulvinar id. Donec arcu nibh, ultricies interdum enim eget, rutrum semper dolor. Etiam aliquam eget orci ac porta. Integer auctor nulla quis sagittis blandit. Nulla et elementum lacus. Proin nec lacinia sem. Donec vel tellus nulla.</td>
+              <td  contenteditable="true" class="text-justify">Ionização das partículas de neônio no vácuo</td>
+              <td><span class="badge">3</span>
+            </tr>
+            <tr>
+              <td><h5>
+                  <label class="tag">Inteligência Artificial</label>
+                  <label class="tag">Linguística</label>
+                </h5></td>
+              <td style="width:640px;" contenteditable="true" class="text-justify">Curabitur in tristique velit, vitae sollicitudin nisi. Nunc a nisi at odio vehicula vehicula eu ut lectus. Suspendisse et est at dolor tristique malesuada vel in urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ultricies commodo leo, ac elementum ex fringilla sit amet. Nulla semper ex vel purus porttitor, vitae aliquet diam venenatis. Mauris vel enim urna. Aenean in arcu eu dui fermentum efficitur sed id sem. Vestibulum ante felis, efficitur dignissim tortor vel, porttitor dictum felis. Donec sed ante sapien. Vestibulum tincidunt eros orci, sagittis pretium nunc semper ut. Nullam sed ornare sapien. Cras ultrices a lorem ultricies accumsan. Phasellus ut fermentum ex. Aenean ex augue, condimentum eu enim finibus, interdum mollis urna.</td>
+              <td contenteditable="true" class="text-justify">Inteligência artificial nas relações linguísticas primitivas</td>
+              <td><span class="badge">3</span>
+            </tr>
+            <tr>
+              <td><h5>
+                  <label class="tag">Veterinária</label>
+                  <label class="tag">Arqueologia</label>
+                  <label class="tag">Sociologia</label>
+                </h5></td>
+              <td style="width:640px;" contenteditable="true" class="text-justify">Vestibulum diam eros, sollicitudin vitae eros a, dapibus mollis purus. Sed sit amet est viverra lorem sodales ultrices in a tortor. Nam vehicula fermentum est. Integer purus mi, rhoncus sed convallis in, posuere vel ipsum. Maecenas sed purus volutpat, volutpat libero sit amet, malesuada sapien. Mauris eu velit enim. Aenean justo ante, rhoncus vitae pellentesque vitae, congue at enim. Mauris pulvinar, mauris nec euismod rutrum, tellus massa vulputate nunc, et ultricies lacus neque sed sem. Vivamus dignissim erat quis felis cursus ultricies. Pellentesque aliquet feugiat ante, in dignissim nulla consectetur in. Cras dapibus vitae odio id dapibus.</td>
+              <td  contenteditable="true" class="text-justify">Influência de animais domésticos no Egito Antigo</td>
+              <td><span class="badge">0</span>
+            </tr>
+            <tr id=new>
+                <script>
+                  function tabela(){
+                  var txt1 = "<td><h5><label class="tag"></label></h5></td>"
+                  var txt2 = "<td style="width:640px;" class="text-justify"></td>"
+                  var txt3 = "<td class="text-justify"></td>"
+                  txt1.innerHTML = $("input[name=tipo]").val();
+                  txt2.innerHTML = $("input[name=des]").val(); 
+                  txt3.innerHTML = $("input[name=teng]").val(); 
+                  $("#new").append(txt1, txt2, txt3);
+                  }
+                </script>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -20,6 +20,14 @@ body{
     background: #56e8ad;
 }
 
+.m-areas label{
+    margin: 5px;
+    background-color: #61ffbb;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .active{
     background-color: #56e8ad;
 }
@@ -31,7 +39,31 @@ body{
     padding: 10px;
 
 }
-#newIC{
-    position: relative;
-    float: right;
+.props{
+    border: solid;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+}
+
+.tag{
+    margin-top: 13px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    background-color: #61ffbb;
+    border-radius: 7px;
+    padding: 6px;
+    text-align: center;
+
+}
+.Lbutton h1{
+    background-color: #56e8ad;
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+    padding-left: 10px; 
+    color: rgb(90, 88, 88);
+    text-decoration: none;
 }

@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <title>ICMatch</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Titillium+Web" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css" >
+    </head>
+    <body>
+        <nav class="navbar navbar-default header">
+            <div class="container-fluid">
+    
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="font-family: 'Baloo Bhaijaan'; font-size: xx-large " href="home.html">ICMatch</a>
+                </div>
+                <ul class="nav navbar-nav">
+    
+                    
+                    <li><a href="page-search.html">Minhas IC's</a></li>
+                    <li><a href="Buscar_Alunos.html">Buscar Aluno</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="perfil-prof.html"><span class="glyphicon glyphicon-user"></span> Professor</a></li>
+    
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Nova IC</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="frm1">
+                        <div class="form-group">
+                          <label for="ictype"><abbr title="Em que área acadêmica sua pesquisa melhor se encaixa? (Ex: Biologia, Informática, Quântica...)"/>Área de IC:</label>
+                          <input name="tipo" type="text" class="form-control" id="ictype">
+                        </div>
+                        <div class="form-group">
+                          <label for="icdes"><abbr title="Faça uma breve descrição da Iniciação Científica sendo oferecida">Descrição:</label>
+                            <textarea name="des" class="form-control" rows="5" id="icdes"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="ictag"><abbr title="Escolha pelo menos uma tag para facilitar a correspondência de interesses">Tags:</label>
+                          <div id="ictag" class="container">
+                            <div class="row">
+                              <div class="checkbox">
+                                  <label class="col-sm-4"><input name="tbio" type="checkbox" value="1">Biologia</label>
+                              </div>
+                              <div class="checkbox">
+                                  <label class="col-sm-4"><input name="teng" type="checkbox" value="1">Engenharia</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="checkbox">
+                                    <label class="col-sm-4"><input name="tmat" type="checkbox" value="1">Matemática</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="col-sm-4"><input name="tqui" type="checkbox" value="1">Quimica</label>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button id="icdo" type="submit" on-click="tabela()" class="btn btn-primary btn-block">Criar</button>
+                    </form>
+                </div>
+              </div> 
+            </div>
+          </div>
+            <div class="container">      
+                <button id="newIC" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Divulgar nova IC</button>             
+                    <table class="table">
+                        
+                        
+                        <br>
+                        <h2><b>IC: Ionização das partículas de neônio no vácuo</b></h2>
+                        <h6>
+                          <label class="tag"> Física Molecular </label>
+                          <label class="tag"> Astronomia</label>
+                          
+                        </h6>
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Alunos interessados</th>
+                          <th>Situação escolar</th>
+                          <th>Email</th>
+                          <th>Enviar mensagem</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="brendon_perfil.jpg" class="img-circle" width="76" height="59"></td>
+                          <td>Brendon Urie</td>
+                          <td>Engenharia de minas, 1ºano - EP/USP</td>
+                          <td>bu@example.com</td>
+                          <td><a type="button" onclick="funcao()" href="#"><span class="glyphicon glyphicon-envelope"></span></a></td>
+                        </tr>
+                        <tr>
+                          <td><img src="patrick_perfil.jpg" class="img-circle" width="76" height="59"></td>
+                          <td>Patrick Stump</td>
+                          <td>Mestrando em Matemática - IME/USP</td>
+                          <td>ps@example.com</td>
+                          <td><a type="button" onclick="funcao()" href="#"><span class="glyphicon glyphicon-envelope"></span></a></td>
+                        </tr>
+                        <tr>
+                          <td><img src="einstein_perfil.jpg" class="img-circle" width="76" height="59"></td>
+                          <td>Albert Einstein</td>
+                          <td>Economia, 4ºano - FEA/USP</td>
+                          <td>ae@example.com</td>
+                          <td><a type="button" onclick="funcao()" href="#"><span class="glyphicon glyphicon-envelope"></span></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <script>
+                        function funcao()
+                        {
+                            alert ("Mensagem enviada com sucesso");
+                        }
+                    </script>
+
+                    <h2><b>IC: Aplicações da física no mundo coorporativo</b></h2>          
+                    <h6>
+                        <label class="tag"> Administração </label>
+                        <label class="tag"> Física</label>
+                      </h6>  
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Alunos interessados</th>
+                          <th>Situação escolar</th>
+                          <th>Email</th>
+                          <th>Enviar mensagem</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="perfil.jpg" class="img-circle" width="76" height="59"></td>
+                          <td>John Doe</td>
+                          <td>Engenharia de Produção, 2ºano - EP/USP</td>
+                          <td>john@example.com</td>
+                          <td><a type="button" onclick="funcao()" href="#"><span class="glyphicon glyphicon-envelope"></span></a></td>
+                        </tr>
+                        <tr>
+                          <td><img src="perfil.jpg" class="img-circle" width="76" height="59"></td>
+                          <td>Mary Moe</td>
+                          <td>Engenharia Ambiental, 3ºano - EP/USP</td>
+                          <td>mary@example.com</td>
+                          <td><a type="button" onclick="funcao()" href="#"><span class="glyphicon glyphicon-envelope"></span></a></td>
+                        </tr>
+                        <tr>
+                          <td><img src="perfil.jpg" class="img-circle" width="76" height="59"></td>
+                          <td>July Dooley</td>
+                          <td>Astronomia, 4ºano - IAG/USP</td>
+                          <td>july@example.com</td>
+                          <td><a type="button" onclick="funcao()" href="#"><span class="glyphicon glyphicon-envelope"></span></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+    </body>
+</html>
